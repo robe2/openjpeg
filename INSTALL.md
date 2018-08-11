@@ -29,6 +29,7 @@ make doc
 Main available cmake flags:
   * To specify the install path: '-DCMAKE\_INSTALL\_PREFIX=/path'
   * To build the shared libraries and links the executables against it: '-DBUILD\_SHARED\_LIBS:bool=on' (default: 'ON')
+  * PKG_CONFIG files are by default built for Unix compile, you can force to build on other platforms by adding: '-DBUILD_PKGCONFIG_FILES=on'
 > Note: when using this option, static libraries are not built and executables are dynamically linked.
   * To build the CODEC executables: '-DBUILD\_CODEC:bool=on' (default: 'ON')
   * To build opjstyle (internal version of astyle) for OpenJPEG development: '-DWITH_ASTYLE=ON'
